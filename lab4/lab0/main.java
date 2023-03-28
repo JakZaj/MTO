@@ -6,10 +6,21 @@ class lab0 {
 		for(int i=0;i<format_string.length();i++){
 			if((format_string.charAt(i) == '#') && (format_string.charAt(i+1) == 'g')){
 				String strToPrint = "";
+				Boolean nega = false;
+				if(param.charAt(0) == '-'){
+					nega = true;
+					param = param.substring(1);
+				}
 				for(int k = 0; k < param.length(); k++){
 					strToPrint = param.charAt(k) + strToPrint;
 				}
-				System.out.print(Integer.parseInt(strToPrint));
+				if(nega){
+					System.out.print(Integer.parseInt('-' + strToPrint));
+				}
+				else{
+					System.out.print(Integer.parseInt(strToPrint));
+				}
+
 				i++;
 			}else{
 				System.out.print(format_string.charAt(i));
