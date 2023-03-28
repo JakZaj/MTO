@@ -18,3 +18,7 @@ test9 #g fjdslkjfdl
 000478
 test10 #g rewrewrew
 2000
+test11 #g nkklh
+-100
+test12 #g nhfhf
+-045
