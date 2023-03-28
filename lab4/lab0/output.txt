@@ -1,10 +1,10 @@
-totafsdfsf test fdsfsdf
-totafsdtest2 fdsfsdf fdfjs
-jfldjfldk # wynik
-fjdfsfds # k alal
-djfjkldsjf test5 jjjjjj fsfjdljfdlsj flj ldfj
-gjjkdsljflds test6 jdlkfjdslf
-fjdslkfjdl test7 tttttt
-fjdlsjfkl test8 oooolll
-rwrewrew test9 fjdslkjfdl
-fjdlskjfldjflj test10 rewrewrew
+test1 321 fdsfsdf
+test2 77fdsfsdf fdfjs
+test3 9999 wynik
+test4 # g alal
+test5 4663 jjjjjj fsfjdljfdlsj flj ldfj
+test6 04554 jdlkfjdslf
+test7 46 tttttt
+test8 42010 oooolll
+test9 874000 fjdslkjfdl
+test10 0002 rewrewrew
