@@ -9,7 +9,7 @@ class lab0 {
 				for(int k = 0; k < param.length(); k++){
 					strToPrint = param.charAt(k) + strToPrint;
 				}
-				System.out.print(strToPrint);
+				System.out.print(Integer.parseInt(strToPrint));
 				i++;
 			}else{
 				System.out.print(format_string.charAt(i));
