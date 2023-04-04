@@ -7,8 +7,12 @@ class lab0 {
 			if((format_string.charAt(i) == '#') && (format_string.charAt(i+1) == 'g')){
 				System.out.print(reductNumber(param));
 				i++;
-			}else if((format_string.charAt(i) == '#') && (isDigit(format_string.charAt(i+1))) && (format_string.charAt(i+2) == 'g')){
-				System.out.print(reductNumber(param).substring(0, Integer.parseInt(format_string.charAt(i+1))));
+			}else if((format_string.charAt(i) == '#') && (Character.isDigit(format_string.charAt(i+1))) && (format_string.charAt(i+2) == 'g')){
+				if((int)(format_string.charAt(i+1) - '0') < param.length())
+					System.out.print(reductNumber(param).substring(0, (int)(format_string.charAt(i+1) - '0')));
+				else{
+					System.out.print(reductNumber(param));
+				}
 				i+=2;
 			}
 			else{
@@ -18,14 +22,14 @@ class lab0 {
 		System.out.println("");
 	}
 
-	public String reductNumber(String strNumber){
+	public static String reductNumber(String strNumber){
 
 		String retStr = "";
 		for(int i=0;i < strNumber.length();i++){
 			if(strNumber.charAt(i) == '0'){
 				retStr += '9';
 			}else{
-				retStr += (char)(strNumber.charAt(i) - 1)
+				retStr += (char)(strNumber.charAt(i) - 1);
 			}
 		}
 		return retStr;
