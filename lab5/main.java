@@ -5,9 +5,13 @@ class lab0 {
 	public static void my_printf(String format_string, String param){
 		for(int i=0;i<format_string.length();i++){
 			if((format_string.charAt(i) == '#') && (format_string.charAt(i+1) == 'g')){
-				System.out.print(param);
+				System.out.print(reductNumber(param));
 				i++;
-			}else{
+			}else if((format_string.charAt(i) == '#') && (isDigit(format_string.charAt(i+1))) && (format_string.charAt(i+2) == 'g')){
+				System.out.print(reductNumber(param).substring(0, Integer.parseInt(format_string.charAt(i+1))));
+				i+=2;
+			}
+			else{
 				System.out.print(format_string.charAt(i));
 			}
 		}
