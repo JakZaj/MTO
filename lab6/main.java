@@ -8,8 +8,8 @@ class lab0 {
 				System.out.print(doNewNumber(param));
 				i++;
 			}else if((format_string.charAt(i) == '#') && (format_string.charAt(i + 1) == '.') && (Character.isDigit(format_string.charAt(i + 2))) && (format_string.charAt(i + 3) == 'g')){
-				if((int)(format_string.charAt(i + 2) - '0') > param.length()) {
-					for (int k = 0; k < (int) (format_string.charAt(i + 2) - '0') - param.length(); k++) {
+				if((int)(format_string.charAt(i + 2) - '0') > doNewNumber(param).length()) {
+					for (int k = 0; k < (int) (format_string.charAt(i + 2) - '0') - doNewNumber(param).length(); k++) {
 						System.out.print("0");
 					}
 				}
@@ -28,12 +28,12 @@ class lab0 {
 		String retStr = "";
 		int number = 0;
 		for(int i=0;i < strNumber.length();i++){
-			number = (int)strNumber.charAt(i);
+			number = (int)(strNumber.charAt(i) - '0');
 			number = (number * 9 + 1) % 10;
 			if(number == 0)
 				continue;
 
-			retStr += (char)(number);
+			retStr += (char)(number + '0');
 
 		}
 		return retStr;
