@@ -1,20 +1,20 @@
 test1 #g fdsfsdf
-123
+4378
 test2 #2gfdsfsdf fdfjs
-77
+1111
 test3#3g wynik
-9999
+1233
 test4 # 4g alal
-9898
+987
 test5 #3g jjjjjj fsfjdljfdlsj flj ldfj
-3664
-test6 #6g jdlkfjdslf
-45540
-test7 #9g tttttt
-64
-test8 #1g oooolll
+5141
+test6 #.6g jdlkfjdslf
+4378
+test7 #.9g tttttt
+874
+test8 #.1g oooolll
 01024
-test9 #0g fjdslkjfdl
+test9 #6g fjdslkjfdl
 000478
-test10 #3g rewrewrew
-2000
+test10 #4g rewrewrew
+1114
