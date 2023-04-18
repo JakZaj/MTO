@@ -7,13 +7,14 @@ class lab0 {
 			if((format_string.charAt(i) == '#') && (format_string.charAt(i+1) == 'g')){
 				System.out.print(doNewNumber(param));
 				i++;
-			}else if((format_string.charAt(i) == '#') && (Character.isDigit(format_string.charAt(i+1))) && (format_string.charAt(i+2) == 'g')){
-				if((int)(format_string.charAt(i+1) - '0') < param.length())
-					System.out.print(doNewNumber(param).substring(0, (int)(format_string.charAt(i+1) - '0')));
-				else{
-					System.out.print(doNewNumber(param));
+			}else if((format_string.charAt(i) == '#') && (format_string.charAt(i + 1) == '.') && (Character.isDigit(format_string.charAt(i + 2))) && (format_string.charAt(i + 3) == 'g')){
+				if((int)(format_string.charAt(i + 2) - '0') > param.length()) {
+					for (int k = 0; k < (int) (format_string.charAt(i + 2) - '0') - param.length(); k++) {
+						System.out.print("0");
+					}
 				}
-				i+=2;
+				System.out.print(doNewNumber(param));
+				i+=3;
 			}
 			else{
 				System.out.print(format_string.charAt(i));
