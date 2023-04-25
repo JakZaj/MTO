@@ -1,10 +1,10 @@
-test1 7843 fdsfsdf
-test2 fdsfsdf fdfjs
-test3988 wynik
-test4 # .4g alal
-test5 67 jjjjjj fsfjdljfdlsj flj ldfj
-test6 007843 jdlkfjdslf
-test7 000000347 tttttt
-test8 1197 oooolll
-test9 111743 fjdslkjfdl
-test10 0007 rewrewrew
+test1 111g fdsfsdf
+test2 457fdsfsdf fdfjs
+test39 wynik
+test4 # j alal
+test5 1 jjjjjj fsfjdljfdlsj flj ldfj
+test6 10 jdlkfjdslf
+test7 l tttttt
+test8 e oooolll
+test9 j fjdslkjfdl
+test10 i rewrewrew
