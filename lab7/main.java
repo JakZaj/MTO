@@ -6,7 +6,7 @@ class lab0 {
 		for(int i=0;i<format_string.length();i++){
 			if((format_string.charAt(i) == '#') && (format_string.charAt(i+1) == 'j')){
 				int intParam = Integer.parseInt(param);
-				String paramToPrint = Integer.toHexString(intParam).replace('a', 'g').replace('b', 'h').replace('c', 'i').replace('d', 'j').replace('f', 'l');
+				String paramToPrint = Integer.toHexString(intParam).replace('a', 'g').replace('b', 'h').replace('c', 'i').replace('d', 'j').replace('e', 'k').replace('f', 'l');
 				System.out.print(paramToPrint);
 				i++;
 			}else{
