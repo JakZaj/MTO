@@ -1,20 +1,20 @@
-test1 #g fdsfsdf
+test1 #j fdsfsdf
 4378
-test2 #gfdsfsdf fdfjs
+test2 #jfdsfsdf fdfjs
 1111
-test3#g wynik
-1233
-test4 # .4g alal
+test3#j wynik
+9
+test4 # j alal
 987
-test5 #g jjjjjj fsfjdljfdlsj flj ldfj
-5141
-test6 #.6g jdlkfjdslf
-4378
-test7 #.9g tttttt
-874
-test8 #.1g oooolll
-01024
-test9 #.6g fjdslkjfdl
-000478
-test10 #.4g rewrewrew
-1114
+test5 #j jjjjjj fsfjdljfdlsj flj ldfj
+1
+test6 #j jdlkfjdslf
+16
+test7 #j tttttt
+15
+test8 #j oooolll
+14
+test9 #j fjdslkjfdl
+13
+test10 #j rewrewrew
+12
