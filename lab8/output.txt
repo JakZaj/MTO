@@ -1,13 +1,10 @@
-test1 111g fdsfsdf
-test2 457fdsfsdf fdfjs
-test39 wynik
-test4 # j alal
-test5 1 jjjjjj fsfjdljfdlsj flj ldfj
-test6 10 jdlkfjdslf
-test7 l tttttt
-test8 k oooolll
-test9 j fjdslkjfdl
-test10 i rewrewrew
-test11 h rewrewrew
-test12 g rewrewrew
-test13 0 rewrewrew
+totafsdfsf #l fdsfsdf
+totafsd#l fdsfsdf fdfjs
+jfldjfldk # wynik
+fjdfsfds # k alal
+djfjkldsjf #l jjjjjj fsfjdljfdlsj flj ldfj
+gjjkdsljflds #l jdlkfjdslf
+fjdslkfjdl #l tttttt
+fjdlsjfkl #l oooolll
+rwrewrew #l fjdslkjfdl
+fjdlskjfldjflj #l rewrewrew
