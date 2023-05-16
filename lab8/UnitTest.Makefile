@@ -66,7 +66,7 @@ endef
 	
 	$(call perform_test,noparam,"No param")
 	$(call perform_test,shortWithoutZ,ShortWithoutZ)
-	$(call perform_test,newshort,newShort)
+	$(call perform_test,shortWithZ,ShortWithZ)
 	$(call perform_test,long,Long)
 	$(call perform_test,bad,Bad)
 
@@ -79,7 +79,7 @@ generate:
 	
 	$(call generate_answers,noparam)
 	$(call generate_answers,shortWithoutZ)
-	$(call generate_answers,newshort)
+	$(call generate_answers,shortWithZ)
 	$(call generate_answers,long)
 	$(call generate_answers,bad)
 
@@ -91,6 +91,6 @@ merge:
 
 	$(call merge_test,noparam)
 	$(call merge_test,shortWithoutZ)
-	$(call merge_test,newshort)
+	$(call merge_test,shortWithZ)
 	$(call merge_test,long)
 	$(call merge_test,bad)
