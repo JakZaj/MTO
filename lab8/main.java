@@ -12,12 +12,13 @@ class lab0 {
 			} else if((format_string.charAt(i) == '#') && (format_string.charAt(i + 1) == '.') && (Character.isDigit(format_string.charAt(i + 2))) && (format_string.charAt(i + 3) == 'j')){
 				BigInteger bigInteger = new BigInteger(param);
 				String paramToPrint = bigInteger.toString(16).replace('0','o').replace('a', 'g').replace('b', 'h').replace('c', 'i').replace('d', 'j').replace('e', 'k').replace('f', 'l');
-				int len = format_string.charAt(i + 2) - '0';
-				if(len < paramToPrint.length())
+
+				if(format_string.charAt(i + 2) - '0' > paramToPrint.length())
 					for(int k = 0; k < (int) (format_string.charAt(i + 2) - '0') - paramToPrint.length(); k++)
 						System.out.print("o");
 
 				System.out.print(paramToPrint);
+
 				i+=3;
 			}else{
 				System.out.print(format_string.charAt(i));
