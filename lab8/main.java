@@ -13,10 +13,13 @@ class lab0 {
 				BigInteger bigInteger = new BigInteger(param);
 				String paramToPrint = bigInteger.toString(16).replace('0','o').replace('a', 'g').replace('b', 'h').replace('c', 'i').replace('d', 'j').replace('e', 'k').replace('f', 'l');
 
-				if(format_string.charAt(i + 2) - '0' > paramToPrint.length())
-					for(int k = 0; k < (int) (format_string.charAt(i + 2) - '0') - paramToPrint.length(); k++) {
+				int z=format_string.charAt(i + 2) - '0';
+				
+				if(z > paramToPrint.length())
+					for(int k = 0; k < z - paramToPrint.length(); k++) {
 						if (paramToPrint.charAt(0) == '-') {
 							paramToPrint = "-o" + paramToPrint.substring(1);
+							k--;
 						} else {
 							paramToPrint = "o" + paramToPrint;
 						}
