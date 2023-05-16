@@ -4,7 +4,12 @@ import java.math.BigInteger;
 class lab0 {
 	public static void my_printf(String format_string, String param){
 		for(int i=0;i<format_string.length();i++){
-			if((format_string.charAt(i) == '#') && (format_string.charAt(i + 1) == '.') && (Character.isDigit(format_string.charAt(i + 2))) && (format_string.charAt(i + 3) == 'j')){
+			if((format_string.charAt(i) == '#') && (format_string.charAt(i + 1) == 'j')) {
+				BigInteger bigInteger = new BigInteger(param);
+				String paramToPrint = bigInteger.toString(16).replace('0', 'o').replace('a', 'g').replace('b', 'h').replace('c', 'i').replace('d', 'j').replace('e', 'k').replace('f', 'l');
+				System.out.print(paramToPrint);
+				i++;
+			} else if((format_string.charAt(i) == '#') && (format_string.charAt(i + 1) == '.') && (Character.isDigit(format_string.charAt(i + 2))) && (format_string.charAt(i + 3) == 'j')){
 				BigInteger bigInteger = new BigInteger(param);
 				String paramToPrint = bigInteger.toString(16).replace('0','o').replace('a', 'g').replace('b', 'h').replace('c', 'i').replace('d', 'j').replace('e', 'k').replace('f', 'l');
 				int len = format_string.charAt(i + 2) - '0';
@@ -13,7 +18,7 @@ class lab0 {
 						System.out.print("o");
 
 				System.out.print(paramToPrint);
-				i++;
+				i+=3;
 			}else{
 				System.out.print(format_string.charAt(i));
 			}
