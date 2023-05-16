@@ -14,8 +14,13 @@ class lab0 {
 				String paramToPrint = bigInteger.toString(16).replace('0','o').replace('a', 'g').replace('b', 'h').replace('c', 'i').replace('d', 'j').replace('e', 'k').replace('f', 'l');
 
 				if(format_string.charAt(i + 2) - '0' > paramToPrint.length())
-					for(int k = 0; k < (int) (format_string.charAt(i + 2) - '0') - paramToPrint.length(); k++)
-						System.out.print("o");
+					for(int k = 0; k < (int) (format_string.charAt(i + 2) - '0') - paramToPrint.length(); k++) {
+						if (paramToPrint.charAt(0) == '-') {
+							paramToPrint = "-o" + paramToPrint.substring(1);
+						} else {
+							paramToPrint = "o" + paramToPrint;
+						}
+					}
 
 				System.out.print(paramToPrint);
 
