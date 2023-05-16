@@ -1,12 +1,12 @@
-
 import java.io.*;
+import java.math.BigInteger;
 
 class lab0 {
 	public static void my_printf(String format_string, String param){
 		for(int i=0;i<format_string.length();i++){
 			if((format_string.charAt(i) == '#') && (format_string.charAt(i+1) == 'j')){
-				int intParam = Integer.parseInt(param);
-				String paramToPrint = Integer.toHexString(intParam).replace('0','o').replace('a', 'g').replace('b', 'h').replace('c', 'i').replace('d', 'j').replace('e', 'k').replace('f', 'l');
+				BigInteger bigInteger = new BigInteger(param);
+				String paramToPrint = bigInteger.toString(16).replace('0','o').replace('a', 'g').replace('b', 'h').replace('c', 'i').replace('d', 'j').replace('e', 'k').replace('f', 'l');
 				System.out.print(paramToPrint);
 				i++;
 			}else{
