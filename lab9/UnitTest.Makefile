@@ -64,7 +64,10 @@ endef
 	
 	# perform_test,INPUT_FILE_NAME_WOUT_EXTENSION,TEST_NAME
 	
-	$(call perform_test,test,"test")
+	$(call perform_test,noparam,"No param")
+	$(call perform_test,withoutpointer,"with out pointer")
+	$(call perform_test,withpointer,"with pointer")
+	$(call perform_test,xbigger,"xbigger")
 
 
 	$(call restore_data)
@@ -74,7 +77,10 @@ generate:
 
 	# generate_output,INPUT_FILE_NAME_WOUT_EXTENSION
 	
-	$(call generate_answers,test)
+	$(call generate_answers,noparam)
+	$(call generate_answers,withoutpointer)
+	$(call generate_answers,withpointer)
+	$(call generate_answers,xbigger)
 
 
 	$(call restore_data)
@@ -83,5 +89,8 @@ merge:
 	-rm ./input.txt 2>/dev/null
 	-rm ./answers.txt 2>/dev/null
 
-	$(call merge_test,test)
+	$(call merge_test,noparam)
+	$(call merge_test,withoutpointer)
+	$(call merge_test,withpointer)
+	$(call merge_test,xbigger)
 

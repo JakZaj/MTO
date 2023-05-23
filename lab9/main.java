@@ -7,14 +7,11 @@ class lab0 {
 			if((format_string.charAt(i) == '#') && (format_string.charAt(i + 1) == '.') && (Character.isDigit(format_string.charAt(i + 2)))){
 				int formatStringPosition = i + 3;
 				int valueofZ = format_string.charAt(i + 2) - '0';
-				System.out.print("beforewhile\n");
 				while(Character.isDigit(format_string.charAt(formatStringPosition))){
-					System.out.print("while\n");
 					valueofZ *= 10;
 					valueofZ += format_string.charAt(formatStringPosition) - '0';
 					formatStringPosition++;
 				}
-				System.out.print("after\n");
 				if(format_string.charAt(formatStringPosition) == 'h')
 				{
 					int pointIndex = param.indexOf('.');
@@ -52,36 +49,31 @@ class lab0 {
 						}
 					}
 
+					if(param.length() - pointIndex < valueofZ) {
+						for (; k < param.length(); k++) {
+							if (k + 1 == param.length()) {
+								//brak zaokrąglania
+								paramAfterPoint = paramAfterPoint + param.charAt(k);
+							} else {
+								paramAfterPoint = paramAfterPoint + param.charAt(k);
+							}
+						}
+						for(; k-pointIndex + 1 < valueofZ; k++)
+							paramAfterPoint = paramAfterPoint + changeCharAfterPointer('0');
+					}
+					else {
+						for (; k < param.length(); k++) {
+							paramAfterPoint = paramAfterPoint + param.charAt(k);
 
-//					if(param.length() - pointIndex < valueofZ) {
-//						for (; k < param.length(); k++) {
-//							if (k + 1 == param.length()) {
-//								if (param.charAt(k + 1) - '0' > 5) {
-//									paramAfterPoint = paramAfterPoint + (param.charAt(k)+1);
-//								} else {
-//									paramAfterPoint = paramAfterPoint + param.charAt(k);
-//								}
-//							} else {
-//								paramAfterPoint = paramAfterPoint + param.charAt(k);
-//							}
-//						}
-//						for(; k-pointIndex + 1 < valueofZ; k++)
-//							paramAfterPoint = paramAfterPoint + changeCharAfterPointer('0');
-//					}
-//					else {
-//						for (; k < param.length(); k++) {
-//							paramAfterPoint = paramAfterPoint + param.charAt(k);
-//
-//						}
-//					}
-//
-//
-//					for(int c = 0; c < paramBeforePoint.length(); c++)
-//						System.out.print(changeCharBeforePointer(paramBeforePoint.charAt(c)));
-//					System.out.print('.');
-//					for(int c = 0; c < paramAfterPoint.length(); c++)
-//						System.out.print(changeCharAfterPointer(paramAfterPoint.charAt(c)));
-//					i += formatStringPosition - i;
+						}
+					}
+
+					for(int c = 0; c < paramBeforePoint.length(); c++)
+						System.out.print(changeCharBeforePointer(paramBeforePoint.charAt(c)));
+					System.out.print('.');
+					for(int c = 0; c < paramAfterPoint.length(); c++)
+						System.out.print(changeCharAfterPointer(paramAfterPoint.charAt(c)));
+					i += formatStringPosition - i;
 				}
 				else
 				{

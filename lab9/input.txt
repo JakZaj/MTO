@@ -1,20 +1,24 @@
-totafsdfsf # fdsfsdf
-test
-totafsd# fdsfsdf fdfjs
-test2
-jfldjfldk # wynik
-test3
-fjdfsfds # k alal
-test4
-djfjkldsjf jjjjjj fsfjdljfdlsj flj ldfj
-test5
-gjjkdsljflds jdlkfjdslf
-test6
-fjdslkfjdl tttttt
-test7
-fjdlsjfkl oooolll
-test8
-rwrewrew fjdslkjfdl
-test9
-fjdlskjfldjflj rewrewrew
-test10
+totafsdfsf # .2h fdsfsdf
+1.12
+totafsd #. 5h fdsfsdf fdfjs
+12.41
+djfjkldsjf #.4 h jjjjjj fsfjdljfdlsj flj ldfj
+0.16666
+totafsdfsf #.2h fdsfsdf
+1
+totafsd #.0h fdsfsdf fdfjs
+12
+djfjkldsjf #.4h jjjjjj fsfjdljfdlsj flj ldfj
+0
+totafsdfsf #.1h fdsfsdf
+1.1
+totafsd #.2h fdsfsdf fdfjs
+12.44
+djfjkldsjf #.3h jjjjjj fsfjdljfdlsj flj ldfj
+123.496
+totafsdfsf #.4h fdsfsdf
+1.1
+totafsd #.5h fdsfsdf fdfjs
+12.44
+djfjkldsjf #.12h jjjjjj fsfjdljfdlsj flj ldfj
+123.496
