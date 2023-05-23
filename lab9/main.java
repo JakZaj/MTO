@@ -14,8 +14,40 @@ class lab0 {
 					formatStringPosition++;
 				}
 				if(format_string.charAt(formatStringPosition) == 'h')
+				{
+					int pointIndex = param.indexOf('.');
 
-					i+=3;
+					int k = 0;
+					String paramBeforePoint = "";
+					for( ; k<pointIndex; k++){
+						paramBeforePoint = paramBeforePoint + param.charAt(k);
+					}
+					System.out.print('.');
+					k++;
+					String paramAfterPoint = " ";
+					if(param.length() - pointIndex > 0){
+						for( ; k < param.length(); k++){
+							if(k+1 == param.length()){
+								if()
+							}else{
+								System.out.print(param.charAt(k));
+							}
+
+
+						}
+					}
+
+
+
+					if()
+
+					i += formatStringPosition - i;
+				}
+				else
+				{
+					System.out.print(format_string.charAt(i));
+				}
+
 			}else{
 				System.out.print(format_string.charAt(i));
 			}
