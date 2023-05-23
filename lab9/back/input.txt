@@ -1,0 +1,26 @@
+test1 #j fdsfsdf
+4378
+test2 #jfdsfsdf fdfjs
+1111
+test3#j wynik
+9
+test4 # j alal
+987
+test5 #j jjjjjj fsfjdljfdlsj flj ldfj
+1
+test6 #j jdlkfjdslf
+16
+test7 #j tttttt
+15
+test8 #j oooolll
+14
+test9 #j fjdslkjfdl
+13
+test10 #j rewrewrew
+12
+test11 #j rewrewrew
+11
+test12 #j rewrewrew
+10
+test13 #j rewrewrew
+0
