@@ -17,6 +17,9 @@ class lab0 {
 				{
 					int pointIndex = param.indexOf('.');
 
+					if(pointIndex == -1)
+						pointIndex = param.length();
+
 					int k = 0;
 					String paramBeforePoint = "";
 					for( ; k<pointIndex; k++){
@@ -25,8 +28,25 @@ class lab0 {
 
 					//skip pointer
 					k++;
+					String paramAfterPoint = "";
 
-					String paramAfterPoint = " ";
+					if(pointIndex == param.length()){
+						if(valueofZ != 0){
+							for(int c = 0; c < valueofZ; c++)
+								paramAfterPoint = paramAfterPoint + changeCharAfterPointer('0');
+
+							for(int c = 0; c < paramBeforePoint.length(); c++)
+								System.out.print(changeCharBeforePointer(paramBeforePoint.charAt(c)));
+							System.out.print('.' + paramAfterPoint);
+						}
+						else
+						{
+							for(int c = 0; c < paramBeforePoint.length(); c++)
+								System.out.print(changeCharBeforePointer(paramBeforePoint.charAt(c)));
+						}
+					}
+
+
 					if(param.length() - pointIndex > 0) {
 						for (; k < param.length(); k++) {
 							if (k + 1 == param.length()) {
