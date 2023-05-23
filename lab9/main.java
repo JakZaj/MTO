@@ -38,20 +38,24 @@ class lab0 {
 							for(int c = 0; c < paramBeforePoint.length(); c++)
 								System.out.print(changeCharBeforePointer(paramBeforePoint.charAt(c)));
 							System.out.print('.' + paramAfterPoint);
+							i += formatStringPosition - i;
+							continue;
 						}
 						else
 						{
 							for(int c = 0; c < paramBeforePoint.length(); c++)
 								System.out.print(changeCharBeforePointer(paramBeforePoint.charAt(c)));
+							i += formatStringPosition - i;
+							continue;
 						}
 					}
 
 
-					if(param.length() - pointIndex > 0) {
+					if(param.length() - pointIndex < valueofZ) {
 						for (; k < param.length(); k++) {
 							if (k + 1 == param.length()) {
 								if (param.charAt(k + 1) - '0' > 5) {
-									//zaokrąlić
+									paramAfterPoint = paramAfterPoint + (param.charAt(k)+1);
 								} else {
 									paramAfterPoint = paramAfterPoint + param.charAt(k);
 								}
@@ -59,10 +63,22 @@ class lab0 {
 								paramAfterPoint = paramAfterPoint + param.charAt(k);
 							}
 						}
+						for(; k-pointIndex + 1 < valueofZ; k++)
+							paramAfterPoint = paramAfterPoint + changeCharAfterPointer('0');
+					}
+					else {
+						for (; k < param.length(); k++) {
+							paramAfterPoint = paramAfterPoint + param.charAt(k);
+
+						}
 					}
 
-					System.out.print(paramBeforePoint + '.' + paramAfterPoint);
 
+					for(int c = 0; c < paramBeforePoint.length(); c++)
+						System.out.print(changeCharBeforePointer(paramBeforePoint.charAt(c)));
+					System.out.print('.');
+					for(int c = 0; c < paramAfterPoint.length(); c++)
+						System.out.print(changeCharAfterPointer(paramAfterPoint.charAt(c)));
 					i += formatStringPosition - i;
 				}
 				else
