@@ -22,24 +22,26 @@ class lab0 {
 					for( ; k<pointIndex; k++){
 						paramBeforePoint = paramBeforePoint + param.charAt(k);
 					}
-					System.out.print('.');
+
+					//skip pointer
 					k++;
+
 					String paramAfterPoint = " ";
-					if(param.length() - pointIndex > 0){
-						for( ; k < param.length(); k++){
-							if(k+1 == param.length()){
-								if()
-							}else{
-								System.out.print(param.charAt(k));
+					if(param.length() - pointIndex > 0) {
+						for (; k < param.length(); k++) {
+							if (k + 1 == param.length()) {
+								if (param.charAt(k + 1) - '0' > 5) {
+									//zaokrąlić
+								} else {
+									paramAfterPoint = paramAfterPoint + param.charAt(k);
+								}
+							} else {
+								paramAfterPoint = paramAfterPoint + param.charAt(k);
 							}
-
-
 						}
 					}
 
-
-
-					if()
+					System.out.print(paramBeforePoint + '.' + paramAfterPoint);
 
 					i += formatStringPosition - i;
 				}
@@ -53,6 +55,22 @@ class lab0 {
 			}
 		}
 		System.out.println("");
+	}
+
+	public static char changeCharBeforePointer(char c){
+		return switch (c) {
+			case '0' -> 'a';
+			case '1' -> 'b';
+			case '2' -> 'c';
+			case '3' -> 'd';
+			case '4' -> 'e';
+			case '5' -> 'f';
+			case '6' -> 'g';
+			case '7' -> 'h';
+			case '8' -> 'i';
+			case '9' -> 'j';
+			default -> c;
+		};
 	}
 
 	public static void main(String[] args) throws IOException {
