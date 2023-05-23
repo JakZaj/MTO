@@ -73,6 +73,11 @@ class lab0 {
 		};
 	}
 
+	public static char changeCharAfterPointer(char c){
+		return (char)((((c - '0')+5)%10)+'0');
+	}
+
+
 	public static void main(String[] args) throws IOException {
 		//System.out.println("Hello, World!"); 
 		BufferedReader bufferReader=new BufferedReader(new InputStreamReader(System.in));
