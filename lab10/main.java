@@ -8,13 +8,15 @@ class lab0 {
 
 				BigInteger bigInteger = new BigInteger(param);
 
+				param = bigInteger.toString();
+
 				BigInteger valueF = bigInteger.multiply(BigInteger.valueOf(2));
 				if(param.charAt(0) == '-') {
 					valueF = valueF.divide(BigInteger.valueOf(param.length() - 1));
 				} else {
 					valueF = valueF.divide(BigInteger.valueOf(param.length()));
 				}
-				
+
 				if(valueF.mod(new BigInteger("2")).equals(BigInteger.ZERO)){
 					System.out.print(valueF);
 				} else {
