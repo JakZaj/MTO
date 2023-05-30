@@ -9,9 +9,13 @@ class lab0 {
 				BigInteger bigInteger = new BigInteger(param);
 
 				BigInteger valueF = bigInteger.multiply(BigInteger.valueOf(2));
-				valueF = valueF.divide(BigInteger.valueOf(param.length()));
-
-				if(!valueF.mod(new BigInteger("2")).equals(BigInteger.ZERO)){
+				if(param.charAt(0) == '-') {
+					valueF = valueF.divide(BigInteger.valueOf(param.length() - 1));
+				} else {
+					valueF = valueF.divide(BigInteger.valueOf(param.length()));
+				}
+				
+				if(valueF.mod(new BigInteger("2")).equals(BigInteger.ZERO)){
 					System.out.print(valueF);
 				} else {
 					System.out.print(valueF.toString(16));
