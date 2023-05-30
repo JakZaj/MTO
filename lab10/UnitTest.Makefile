@@ -70,6 +70,7 @@ endef
 	$(call perform_test,zero,"Zero")
 	$(call perform_test,long,"Long")
 	$(call perform_test,longnegative,"Long negative")
+	$(call perform_test,zeroatstart,"Zero at start")
 
 	$(call restore_data)
 
@@ -84,6 +85,7 @@ generate:
 	$(call generate_answers,zero)
 	$(call generate_answers,long)
 	$(call generate_answers,longnegative)
+	$(call generate_answers,zeroatstart)
 
 	$(call restore_data)
 
@@ -97,4 +99,5 @@ merge:
 	$(call merge_test,zero)
 	$(call merge_test,long)
 	$(call merge_test,longnegative)
+	$(call merge_test,zeroatstart)
 
