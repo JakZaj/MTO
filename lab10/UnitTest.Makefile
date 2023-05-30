@@ -66,6 +66,8 @@ endef
 	
 	$(call perform_test,noparam,"No param")
 	$(call perform_test,shorteven,"Short even")
+	$(call perform_test,shortodd,"Short odd")
+	$(call perform_test,zero,"Zero")
 
 	$(call restore_data)
 
@@ -76,6 +78,8 @@ generate:
 	
 	$(call generate_answers,noparam)
 	$(call generate_answers,shorteven)
+	$(call generate_answers,shortodd)
+	$(call generate_answers,zero)
 
 	$(call restore_data)
 
@@ -85,4 +89,6 @@ merge:
 
 	$(call merge_test,noparam)
 	$(call merge_test,shorteven)
+	$(call merge_test,shortodd)
+	$(call merge_test,zero)
 
