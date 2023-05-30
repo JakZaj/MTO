@@ -68,6 +68,8 @@ endef
 	$(call perform_test,shorteven,"Short even")
 	$(call perform_test,shortodd,"Short odd")
 	$(call perform_test,zero,"Zero")
+	$(call perform_test,long,"Long")
+	$(call perform_test,longnegative,"Long negative")
 
 	$(call restore_data)
 
@@ -80,6 +82,8 @@ generate:
 	$(call generate_answers,shorteven)
 	$(call generate_answers,shortodd)
 	$(call generate_answers,zero)
+	$(call generate_answers,long)
+	$(call generate_answers,longnegative)
 
 	$(call restore_data)
 
@@ -91,4 +95,6 @@ merge:
 	$(call merge_test,shorteven)
 	$(call merge_test,shortodd)
 	$(call merge_test,zero)
+	$(call merge_test,long)
+	$(call merge_test,longnegative)
 
