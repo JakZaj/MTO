@@ -67,6 +67,8 @@ endef
 	$(call perform_test,noparam,"No param")
 	$(call perform_test,long,Long)
 	$(call perform_test,short,Short)
+	$(call perform_test,zerobeforenumber,"Zero before number")
+	$(call perform_test,numberswithonlyoneinbinary,"Numbers with only one in binary")
 
 	$(call restore_data)
 
@@ -90,4 +92,6 @@ merge:
 	$(call merge_test,noparam)
 	$(call merge_test,long)
 	$(call merge_test,short)
+	$(call merge_test,zerobeforenumber)
+	$(call merge_test,numberswithonlyoneinbinary)
 
