@@ -16,8 +16,9 @@ class lab0 {
 					} else {
 						output = returnLetter((param.length() - 1 - k) % 10) + output;
 					}
-					System.out.print(param.charAt(k));
 				}
+
+				System.out.print(output);
 
 				i++;
 			}else{
@@ -28,7 +29,19 @@ class lab0 {
 	}
 
 	public static char returnLetter(int i){
-
+		switch (i){
+			case 0: return 'a';
+			case 1: return 'b';
+			case 2: return 'c';
+			case 3: return 'd';
+			case 4: return 'e';
+			case 5: return 'f';
+			case 6: return 'g';
+			case 7: return 'h';
+			case 8: return 'i';
+			case 9: return 'j';
+		}
+		return '0';
 	}
 	public static void main(String[] args) throws IOException {
 		//System.out.println("Hello, World!"); 
