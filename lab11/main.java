@@ -51,7 +51,7 @@ class lab0 {
             case 9:
                 return 'j';
         }
-        return '0';
+        return '1';
     }
 
     public static void main(String[] args) throws IOException {
