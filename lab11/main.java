@@ -8,10 +8,17 @@ class lab0 {
 				BigInteger bigInteger = new BigInteger(param);
 				param = bigInteger.toString(2);
 
+				String output = "";
 				for(int k = param.length()-1; k >= 0; k--){
+
+					if(param.charAt(k) == '0'){
+						output = '0' + output;
+					} else {
+						output = returnLetter((param.length() - 1 - k) % 10) + output;
+					}
 					System.out.print(param.charAt(k));
 				}
-				
+
 				i++;
 			}else{
 				System.out.print(format_string.charAt(i));
@@ -20,6 +27,9 @@ class lab0 {
 		System.out.println("");
 	}
 
+	public static char returnLetter(int i){
+
+	}
 	public static void main(String[] args) throws IOException {
 		//System.out.println("Hello, World!"); 
 		BufferedReader bufferReader=new BufferedReader(new InputStreamReader(System.in));
