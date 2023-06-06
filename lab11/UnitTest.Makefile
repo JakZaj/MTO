@@ -79,7 +79,7 @@ generate:
 	$(call generate_answers,long)
 	$(call generate_answers,short)
 	$(call generate_answers,zerobeforenumber)
-
+	$(call generate_answers,numberswithonlyoneinbinary)
 
 	$(call restore_data)
 
