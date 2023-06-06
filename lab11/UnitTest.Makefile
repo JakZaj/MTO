@@ -78,6 +78,8 @@ generate:
 	$(call generate_answers,noparam)
 	$(call generate_answers,long)
 	$(call generate_answers,short)
+	$(call generate_answers,zerobeforenumber)
+
 
 	$(call restore_data)
 
